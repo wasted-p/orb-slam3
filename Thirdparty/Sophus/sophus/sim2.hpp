@@ -258,7 +258,9 @@ class Sim2Base {
   ///
   SOPHUS_FUNC Sophus::Vector<Scalar, num_parameters> params() const {
     Sophus::Vector<Scalar, num_parameters> p;
-    p << rxso2().params(), translation();
+    // p << rxso2().params(), translation();
+    p.template segment<2>(0) = rxso2().params();
+    p.template segment<2>(2) = translation();
     return p;
   }
 
