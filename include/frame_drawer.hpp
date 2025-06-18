@@ -20,9 +20,9 @@
 #ifndef FRAMEDRAWER_H
 #define FRAMEDRAWER_H
 
-#include "Tracking.h"
-#include "MapPoint.h"
-#include "Atlas.h"
+#include "tracking.hpp"
+#include "map_point.hpp"
+#include "atlas.hpp"
 
 #include<opencv2/core/core.hpp>
 #include<opencv2/features2d/features2d.hpp>

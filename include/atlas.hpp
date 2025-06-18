@@ -22,10 +22,10 @@
 #ifndef ATLAS_H
 #define ATLAS_H
 
-#include "KannalaBrandt8.h"
-#include "KeyFrame.h"
-#include "Pinhole.h"
-#include "geometric_camera.hpp"
+#include "camera_models/geometric_camera.hpp"
+#include "camera_models/kannala_brandt8.hpp"
+#include "camera_models/pinhole.hpp"
+#include "key_frame.hpp"
 #include "map.hpp"
 #include "map_point.hpp"
 

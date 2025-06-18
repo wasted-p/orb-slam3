@@ -20,12 +20,12 @@
 #ifndef LOCALMAPPING_H
 #define LOCALMAPPING_H
 
-#include "KeyFrame.h"
-#include "Atlas.h"
-#include "LoopClosing.h"
-#include "Tracking.h"
-#include "KeyFrameDatabase.h"
-#include "Settings.h"
+#include "key_frame.hpp"
+#include "atlas.hpp"
+#include "loop_closing.hpp"
+#include "tracking.hpp"
+#include "key_frame_database.hpp"
+#include "settings.hpp"
 
 #include <mutex>
 

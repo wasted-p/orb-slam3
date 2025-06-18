@@ -16,9 +16,9 @@
 * If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "MapDrawer.h"
-#include "MapPoint.h"
-#include "KeyFrame.h"
+#include "map_drawer.hpp"
+#include "map_point.hpp"
+#include "key_frame.hpp"
 #include <pangolin/pangolin.h>
 #include <mutex>
 

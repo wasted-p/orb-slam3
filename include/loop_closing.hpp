@@ -22,13 +22,13 @@
 #ifndef LOOPCLOSING_H
 #define LOOPCLOSING_H
 
-#include "Atlas.h"
-#include "KeyFrame.h"
-#include "LocalMapping.h"
-#include "ORBVocabulary.h"
-#include "Tracking.h"
+#include "atlas.hpp"
+#include "key_frame.hpp"
+#include "local_mapping.hpp"
+#include "orb_vocabulary.hpp"
+#include "tracking.hpp"
 
-#include "KeyFrameDatabase.h"
+#include "key_frame_database.hpp"
 
 #include "Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h"
 #include <boost/algorithm/string.hpp>
