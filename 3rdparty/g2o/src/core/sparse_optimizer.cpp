@@ -32,14 +32,12 @@
 #include <iostream>
 #include <iterator>
 
-#include "../stuff/macros.h"
-#include "../stuff/misc.h"
-#include "../stuff/timeutil.h"
 #include "g2o/core/batch_stats.hpp"
 #include "g2o/core/estimate_propagator.hpp"
 #include "g2o/core/hyper_graph_action.hpp"
 #include "g2o/optimization/optimization_algorithm.hpp"
 #include "g2o/robust_kernel/robust_kernel.hpp"
+#include "g2o/solvers/linear_solver_eigen.hpp"
 
 namespace g2o {
 using namespace std;
