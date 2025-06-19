@@ -31,6 +31,7 @@
 
 #include "g2o/core/factory.hpp"
 #include "g2o/core/parameter.hpp"
+#include "g2o/utils/string.hpp"
 
 namespace g2o {
 

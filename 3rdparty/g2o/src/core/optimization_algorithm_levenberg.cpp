@@ -132,7 +132,7 @@ OptimizationAlgorithmLevenberg::solve(int iteration, bool online) {
     scale += 1e-3; // make sure it's non-zero :)
     rho /= scale;
 
-    if (rho > 0 && g2o_isfinite(tempChi)) { // last step was good
+    if (rho > 0 && std::isinf(tempChi)) { // last step was good
       double alpha = 1. - pow((2 * rho - 1), 3);
       // crop lambda between minimum and maximum factors
       alpha = (std::min)(alpha, _goodStepUpperScale);
@@ -201,8 +201,8 @@ void OptimizationAlgorithmLevenberg::setUserLambdaInit(double lambda) {
 }
 
 void OptimizationAlgorithmLevenberg::printVerbose(std::ostream &os) const {
-  os << "\t schur= " << _solver->schur()
-     << "\t lambda= " << FIXED(_currentLambda)
+  os << "\t schur= " << _solver->schur() << "\t lambda= " << std::fixed
+     << _currentLambda << std::resetiosflags(std::ios_base::fixed)
      << "\t levenbergIter= " << _levenbergIterations;
 }
 

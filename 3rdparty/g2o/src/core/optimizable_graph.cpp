@@ -40,6 +40,7 @@
 #include "g2o/core/hyper_graph_action.hpp"
 #include "g2o/optimization/optimization_algorithm_property.hpp"
 #include "g2o/robust_kernel/robust_kernel.hpp"
+#include "g2o/utils/string.hpp"
 
 namespace g2o {
 
@@ -383,8 +384,8 @@ bool OptimizableGraph::load(istream &is, bool createEdges) {
     if (!factory->knowsTag(token)) {
       if (warnedUnknownTypes.count(token) != 1) {
         warnedUnknownTypes.insert(token);
-        cerr << CL_RED(__PRETTY_FUNCTION__ << " unknown type: " << token)
-             << endl;
+        std::cerr << "\033[1;31m" << __PRETTY_FUNCTION__
+                  << " unknown type: " << token << "\033[0m" << std::endl;
       }
       continue;
     }

@@ -431,7 +431,8 @@ int SparseOptimizer::optimize(int iterations, bool online) {
       cumTime += dts;
       if (!errorComputed)
         computeActiveErrors();
-      cerr << "iteration= " << i << "\t chi2= " << FIXED(activeRobustChi2())
+      cerr << "iteration= " << i << "\t chi2= " << std::fixed
+           << activeRobustChi2() << std::resetiosflags(std::ios_base::fixed)
            << "\t time= " << dts << "\t cumTime= " << cumTime
            << "\t edges= " << _activeEdges.size();
       _algorithm->printVerbose(cerr);

@@ -30,7 +30,7 @@
 #include "key_frame_database.hpp"
 
 #include <boost/algorithm/string.hpp>
-#include <g2o/types/types_seven_dof_expmap.h>
+#include <g2o/types/types_seven_dof_expmap.hpp>
 #include <mutex>
 #include <thread>
 

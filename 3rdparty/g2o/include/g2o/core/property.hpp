@@ -27,6 +27,7 @@
 #ifndef G2O_PROPERTY_H_
 #define G2O_PROPERTY_H_
 
+#include "g2o/utils/string.hpp"
 #include <map>
 #include <sstream>
 #include <string>
