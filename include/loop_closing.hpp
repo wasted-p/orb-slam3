@@ -24,14 +24,13 @@
 
 #include "atlas.hpp"
 #include "key_frame.hpp"
-#include "local_mapping.hpp"
 #include "orb_vocabulary.hpp"
 #include "tracking.hpp"
 
 #include "key_frame_database.hpp"
 
-#include "Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h"
 #include <boost/algorithm/string.hpp>
+#include <g2o/types/types_seven_dof_expmap.h>
 #include <mutex>
 #include <thread>
 

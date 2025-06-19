@@ -24,10 +24,9 @@
 
 #include <vector>
 
-#include "Thirdparty/DBoW2/DBoW2/BowVector.h"
-#include "Thirdparty/DBoW2/DBoW2/FeatureVector.h"
-
-#include "Thirdparty/Sophus/sophus/geometry.hpp"
+#include <DBoW2/DBoW2/BowVector.h>
+#include <DBoW2/DBoW2/FeatureVector.h>
+#include <sophus/geometry.hpp>
 
 #include "imu_types.hpp"
 #include "orb_vocabulary.hpp"

@@ -27,8 +27,6 @@
 #include <vector>
 
 #include "frame.hpp"
-// #include "key_frame.hpp"
-// #include "map.hpp"
 #include "orb_vocabulary.hpp"
 
 #include <boost/serialization/base_object.hpp>

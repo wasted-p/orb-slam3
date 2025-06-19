@@ -21,7 +21,8 @@
 
 #include "key_frame_database.hpp"
 
-#include "Thirdparty/DBoW2/DBoW2/BowVector.h"
+#include <DBoW2/BowVector.h>
+
 #include "key_frame.hpp"
 #include "map.hpp"
 #include "map_point.hpp"

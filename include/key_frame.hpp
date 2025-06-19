@@ -22,11 +22,11 @@
 #ifndef KEYFRAME_H
 #define KEYFRAME_H
 
-#include "Thirdparty/DBoW2/DBoW2/BowVector.h"
-#include "Thirdparty/DBoW2/DBoW2/FeatureVector.h"
 #include "frame.hpp"
 #include "imu_types.hpp"
 #include "key_frame_database.hpp"
+#include <DBoW2/DBoW2/BowVector.h>
+#include <DBoW2/DBoW2/FeatureVector.h>
 // #include "map_point.hpp"
 #include "orb_extractor.hpp"
 #include "orb_vocabulary.hpp"

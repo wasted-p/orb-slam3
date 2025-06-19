@@ -20,6 +20,7 @@
  */
 
 #include "map_point.hpp"
+#include "map.hpp"
 #include "orb_matcher.hpp"
 
 #include <mutex>
